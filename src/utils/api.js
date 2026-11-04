@@ -28,7 +28,15 @@ export async function getWeather(lat, lon) {
     `&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code,is_day` +
     `&temperature_unit=fahrenheit&wind_speed_unit=mph`;
 
-    const res = await fetch(url)
-    if (!res.ok) throw new Error("Weather Request Failed")
-    const { current } = await res.json()
+  const res = await fetch(url);
+  if (!res.ok) throw new Error("Weather Request Failed");
+  const { current } = await res.json();
+
+  return {
+    temp: Math.round(current.temperature_2m),
+    feelsLike: Math.round(current.apparent_temperature),
+    humidity: Math.round(current.relative_humidity_2m),
+    wind: Math.round(current.wind_speed_10m),
+    category: getCategory(current.weather_code, current.is_day === 1),
+  };
 }
