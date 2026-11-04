@@ -7,9 +7,10 @@ function App() {
   const [preview, setPreview] = useState("");
 
   return (
-    <main className="app">
-      <h1>Hello, World!</h1>
+    <main className="app" style={{ background: BACKGROUNDS[preview] || "#ffffff" }}>
+      <h1>WEATHER APP</h1>
       <WeatherArt previewCategory={preview} />
+      
     </main>
   );
 }
