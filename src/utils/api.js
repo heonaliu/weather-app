@@ -20,3 +20,15 @@ export async function searchCities(query) {
     lon: r.longitude,
   }));
 }
+
+export async function getWeather(lat, lon) {
+  const url =
+    `https://api.open-meteo.com/v1/forecast` +
+    `?latitude=${lat}&longitude=${lon}` +
+    `&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code,is_day` +
+    `&temperature_unit=fahrenheit&wind_speed_unit=mph`;
+
+    const res = await fetch(url)
+    if (!res.ok) throw new Error("Weather Request Failed")
+    const { current } = await res.json()
+}
