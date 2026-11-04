@@ -12,3 +12,6 @@
 - I learned open-mateo has different weather codes for different descriptions - goal of this project is to retrieve the code and match it to the description which matches it to the right icon
 
 ## Parts I'm Proud Of:
+
+## Learning:
+- async functions are special functions that run in the background -- it returns a promise (of completion or failure) of a task
