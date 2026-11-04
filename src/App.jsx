@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import WeatherArt from "./components/WeatherArt";
 
+
 function App() {
   const [preview, setPreview] = useState("");
 

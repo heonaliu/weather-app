@@ -10,3 +10,7 @@ export function getCategory(code, isDay) {
   if (code >= 95) return "stormy";
   return "cloudy";
 }
+
+export const ART = {
+
+}
