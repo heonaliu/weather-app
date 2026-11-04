@@ -12,9 +12,11 @@
 - I learned open-mateo has different weather codes for different descriptions - goal of this project is to retrieve the code and match it to the description which matches it to the right icon
 
 ## Parts I'm Proud Of:
+- as I was writing the submit fields - i recognized e.preventDefault() to prevent the refreshing of page.
 
 ## Learning:
 - async functions are special functions that run in the background -- it returns a promise (of completion or failure) of a task
 - learned that res=await fetch(url) makes a requet to the server -- whatever comes back is resolved into a "Response" object
 - res.ok is a "read-only" property that evaluates to true if the HTTP status code is within a certain range. Otherwise it evaluates to false
 - after fetching data, when formatting it if it has curly braces, that means we're extrating a specific property named "whatever is inside the curly bracket"
+- I knew that there was always try and catch however I didn't realize that you could also use finally in there too.

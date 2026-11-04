@@ -8,5 +8,28 @@ export default function SearchBar({ onSelect }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  
+  async function handleSubmit(e) {
+    e.preventDefault()
+    const trimmed = query.trim() // remove trailing characters
+    if (!trimmed) return;
+
+    setLoading(true);
+    setError("")
+    setResults([])
+
+    try { // try in case it runs into error
+        const cities = await searchCities(trimmed)
+        if (cities.length === 0) {
+            setError("No Cities Found");
+        } else if (cities.length === 1) {
+            choose(cities[0])
+        } else {
+            setResults(cities)
+        }
+    } catch (e) {
+        setError(e.message)
+    } finally {
+        setLoading(false)
+    }
+  }
 }
