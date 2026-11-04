@@ -12,21 +12,21 @@ export function getCategory(code, isDay) {
 }
 
 export const ART = {
-    sunny: "/assets/art/sunny.png",
-    cloudy: "/assets/art/cloudy.png",
-    foggy: "/assets/art/foggy.png",
-    rainy: "/assets/art/rainy.png",
-    snowy: "/assets/art/snowy.png",
-    stormy: "/assets/art/stormy.png",
-    night: "/assets/art/night.png"
-}
+  sunny: "/assets/art/sunny.png",
+  cloudy: "/assets/art/cloudy.png",
+  foggy: "/assets/art/foggy.png",
+  rainy: "/assets/art/rainy.png",
+  snowy: "/assets/art/snowy.png",
+  stormy: "/assets/art/stormy.png",
+  night: "/assets/art/night.png",
+};
 
 export const BACKGROUNDS = {
-    sunny: "#ffe9a8",
-    cloudy: "#d9dee5",
-    foggy: "#e4d2dc",
-    rainy: "#a9bed1",
-    snowy: "#eef4fb",
-    stormy: "#c0c0c0",
-    night: "#2a2d4a",
-}
+  sunny: "#ffe9a8",
+  cloudy: "#d9dee5",
+  foggy: "#e4d2dc",
+  rainy: "#a9bed1",
+  snowy: "#eef4fb",
+  stormy: "#c0c0c0",
+  night: "#2a2d4a",
+};
