@@ -16,3 +16,4 @@
 ## Learning:
 - async functions are special functions that run in the background -- it returns a promise (of completion or failure) of a task
 - learned that res=await fetch(url) makes a requet to the server -- whatever comes back is resolved into a "Response" object
+- res.ok is a "read-only" property that evaluates to true if the HTTP status code is within a certain range. Otherwise it evaluates to false
