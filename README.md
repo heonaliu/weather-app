@@ -22,3 +22,4 @@
 - res.ok is a "read-only" property that evaluates to true if the HTTP status code is within a certain range. Otherwise it evaluates to false
 - after fetching data, when formatting it if it has curly braces, that means we're extrating a specific property named "whatever is inside the curly bracket"
 - I knew that there was always try and catch however I didn't realize that you could also use finally in there too.
+- Object.keys(obj) is a method that returns an array of given objects. Obj is the array you want to extract the "keys" from.
