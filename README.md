@@ -10,6 +10,7 @@
 - I rarely work with APIs in general so for this project I had to research open-meteo.com which is a free weather API
 - I had to learn how to call from an API
 - I learned open-mateo has different weather codes for different descriptions - goal of this project is to retrieve the code and match it to the description which matches it to the right icon
+- ran in to several errors trying to show the Weather Art component. I checked the console and it due to reading underfined name.
 
 ## Parts I'm Proud Of:
 - as I was writing the submit fields - i recognized e.preventDefault() to prevent the refreshing of page.
