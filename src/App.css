@@ -1,0 +1,27 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 24px 16px;
+}
+
+.app h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.status {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.status.error{
+    color: #f11c11
+}
+
+.preview-picker {
+    font-size: 0.95rem
+}
