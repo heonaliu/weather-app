@@ -30,3 +30,12 @@
 .weather-art:hover {
     transform: scale(1.03) rotate(-1deg)
 }
+
+.weather-temp {
+    font-size: 2.5rem;
+    margin: 16px 0 4px
+}
+
+.weather-label {
+    text-transform: capitalize;
+}

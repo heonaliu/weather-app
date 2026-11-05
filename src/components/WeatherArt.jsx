@@ -18,8 +18,8 @@ export default function WeatherArt({ place, weather, category }) {
         alt={category}
       />
 
-      <h2>{weather.temp}°F</h2>
-      <p>{category}</p>
+      <h2 className="weather-temp">{weather.temp}°F</h2>
+      <p className="weather-label">{category}</p>
     </div>
   );
 }
