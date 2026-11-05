@@ -38,4 +38,14 @@
 
 .weather-label {
     text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 0;
+    opacity: 0.8rem
+}
+
+.weather-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+    gap: 8px;
 }
