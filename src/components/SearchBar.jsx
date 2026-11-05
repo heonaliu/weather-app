@@ -51,9 +51,22 @@ export default function SearchBar({ onSelect }) {
         />
         {/* make button disabled if still fetching/loading */}
         <button type="submit" disabled={loading}>
-          Submit
+          {loading ? "..." : "Search"}
         </button>
       </form>
+      {/* return error if any */}
+      {error && <p className="search-error">{error}</p>}
+
+      {results.length > 0 && (
+        <ul className="">
+          {results.map((city) => (
+            <li key={city.id} onClick={() => choose(city)}>
+              {city.name}
+              <small>{city.region}</small>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
