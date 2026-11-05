@@ -20,6 +20,21 @@ export default function WeatherArt({ place, weather, category }) {
 
       <h2 className="weather-temp">{weather.temp}°F</h2>
       <p className="weather-label">{category}</p>
+
+    <div>
+      <div>
+        <span>Feels Like</span>
+        {weather.feelslike}°F
+      </div>
+      <div>
+        <span>Humidity</span>
+        {weather.humidity}%
+      </div>
+      <div>
+        <span>Wind</span>
+        {weather.wind} mph
+      </div>
+    </div>
     </div>
   );
 }
