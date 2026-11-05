@@ -12,6 +12,7 @@
 - I learned open-mateo has different weather codes for different descriptions - goal of this project is to retrieve the code and match it to the description which matches it to the right icon
 - ran in to several errors trying to show the Weather Art component. I checked the console and it due to reading underfined name.
 - nothing on the art was rendering and all the css if left aligned - it was quite frustrating to find out where my syntax errors are.
+- I had to reimport the images differently rather than directly calling the file within the array.
 
 ## Parts I'm Proud Of:
 - as I was writing the submit fields - i recognized e.preventDefault() to prevent the refreshing of page.

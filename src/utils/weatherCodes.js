@@ -2,8 +2,9 @@ import sunny from "../assets/art/sunny.png";
 import cloudy from "../assets/art/cloudy.png";
 import foggy from "../assets/art/foggy.png";
 import rainy from "../assets/art/rainy.png";
-import snowy from "../assets/art/stormy.png";
+import snowy from "../assets/art/snowy.png";
 import night from "../assets/art/night.png";
+import stormy from "../assets/art/stormy.png"
 
 // aim: convert the weather_code into art category
 export function getCategory(code, isDay) {
