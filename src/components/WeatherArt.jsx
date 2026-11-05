@@ -21,7 +21,7 @@ export default function WeatherArt({ place, weather, category }) {
       <h2 className="weather-temp">{weather.temp}°F</h2>
       <p className="weather-label">{category}</p>
 
-    <div>
+    <div className="weather-stats">
       <div>
         <span>Feels Like</span>
         {weather.feelslike}°F
