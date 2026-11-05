@@ -14,20 +14,30 @@
 }
 
 .status {
-    font-size: 1.1rem;
-    margin: 0;
+  font-size: 1.1rem;
+  margin: 0;
 }
 
-.status.error{
-    color: #f11c11
+.status.error {
+  color: #f11c11;
 }
 
 .preview-picker {
-    font-size: 0.95rem
+  font-size: 0.95rem;
 }
 
 .preview-picker select {
-    padding: 6px 10px;
-    border-radius: 8px;
-    border: 1px solid #aaa
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-size: 0.95rem;
+  text-transform: capitalize;
+}
+
+.app.dark {
+  color: #fff;
+}
+
+.app.dark .weather-card {
+  background: rgba(255, 255, 255, 0.12);
 }
