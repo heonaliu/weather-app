@@ -21,7 +21,7 @@ export async function searchCities(query) {
   }));
 }
 
-export async function getWeather(lat, lon) {
+export async function fetchWeather(lat, lon) {
   const url =
     `https://api.open-meteo.com/v1/forecast` +
     `?latitude=${lat}&longitude=${lon}` +

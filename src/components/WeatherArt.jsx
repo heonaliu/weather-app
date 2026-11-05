@@ -17,6 +17,9 @@ export default function WeatherArt({ place, weather, category }) {
         src={ART[category]}
         alt={category}
       />
+
+      <h2>{weather.temp}</h2>
+      <p>{category}</p>
     </div>
   );
 }
