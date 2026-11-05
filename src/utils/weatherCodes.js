@@ -1,3 +1,10 @@
+import sunny from "../assets/art/sunny.png";
+import cloudy from "../assets/art/cloudy.png";
+import foggy from "../assets/art/foggy.png";
+import rainy from "../assets/art/rainy.png";
+import snowy from "../assets/art/stormy.png";
+import night from "../assets/art/night.png";
+
 // aim: convert the weather_code into art category
 export function getCategory(code, isDay) {
   if (code === 0) return isDay ? "sunny" : "night";
@@ -12,14 +19,14 @@ export function getCategory(code, isDay) {
 }
 
 export const ART = {
-  sunny: "/assets/art/sunny.png",
-  cloudy: "/assets/art/cloudy.png",
-  foggy: "/assets/art/foggy.png",
-  rainy: "/assets/art/rainy.png",
-  snowy: "/assets/art/snowy.png",
-  stormy: "/assets/art/stormy.png",
-  night: "/assets/art/night.png",
-};
+  sunny,
+  cloudy,
+  foggy,
+  rainy,
+  snowy,
+  stormy,
+  night,
+}
 
 export const BACKGROUNDS = {
   sunny: "#ffe9a8",
