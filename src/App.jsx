@@ -30,10 +30,11 @@ function App() {
   }
 
   const category = preview || weather?.category;
+  const isDark = category === "night" || category === "stormy"; //check if the category is dark then change bg to dark color
 
   return (
     <main
-      className="app"
+      className={`app ${isDark ? "dark" : ""}`}
       style={{ background: BACKGROUNDS[preview] || "#ffffff" }}
     >
       <SearchBar onSelect={handleSelect} />
