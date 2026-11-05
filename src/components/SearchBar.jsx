@@ -58,7 +58,7 @@ export default function SearchBar({ onSelect }) {
       {error && <p className="search-error">{error}</p>}
 
       {results.length > 0 && (
-        <ul className="">
+        <ul className="search-results">
           {results.map((city) => (
             <li key={city.id} onClick={() => choose(city)}>
               {city.name}

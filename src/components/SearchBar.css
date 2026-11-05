@@ -9,19 +9,39 @@
 }
 
 .search-form input {
-    flex: 1;
-    padding: 10px 14px;
-    border-radius: 12px;
-    border: 1px solid #bbb;
-    font-size: 1rem;
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #bbb;
+  font-size: 1rem;
 }
 
 .search-form button {
-    padding: 10px 16px;
-    border-radius: 14px;
-    border: none;
-    background: #2b2b2b;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: none;
+  background: #2b2b2b;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.search-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.search-results {
+  list-style: none;
+}
+
+.search-results button {
+  width: 100%;
+  text-align: left;
+  padding: 10px 14px;
+  border: none;
+  background: none;
+  font-size: 1 rem;
+  color: #2b2b2b;
+  cursor: pointer
 }
