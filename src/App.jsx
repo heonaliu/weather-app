@@ -43,6 +43,18 @@ function App() {
       {weather && !loading && (
         <WeatherArt place={place} weather={weather} category={category} />
       )}
+
+      <label>
+        Preview Scene:{" "}
+        <select value={preview} onChange={(e) => setPreview(e.target.value)}>
+          <option value="">Weather</option>
+        </select>
+        {Object.keys(ART).map((n) => (
+          <option key={n} value={n}>
+            {n}
+          </option>
+        ))}
+      </label>
     </main>
   );
 }
