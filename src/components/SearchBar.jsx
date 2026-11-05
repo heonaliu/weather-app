@@ -41,8 +41,8 @@ export default function SearchBar({ onSelect }) {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="search">
+      <form className="search-form" onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Search for a city....."
