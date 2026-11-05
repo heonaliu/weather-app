@@ -25,3 +25,9 @@
 .preview-picker {
     font-size: 0.95rem
 }
+
+.preview-picker select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa
+}

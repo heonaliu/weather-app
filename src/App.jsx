@@ -44,16 +44,16 @@ function App() {
         <WeatherArt place={place} weather={weather} category={category} />
       )}
 
-      <label>
+      <label className="preview-picker">
         Preview Scene:{" "}
         <select value={preview} onChange={(e) => setPreview(e.target.value)}>
           <option value="">Weather</option>
+          {Object.keys(ART).map((n) => (
+            <option key={n} value={n}>
+              {n}
+            </option>
+          ))}
         </select>
-        {Object.keys(ART).map((n) => (
-          <option key={n} value={n}>
-            {n}
-          </option>
-        ))}
       </label>
     </main>
   );
