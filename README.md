@@ -16,6 +16,8 @@
 
 ## Parts I'm Proud Of:
 - as I was writing the submit fields - i recognized e.preventDefault() to prevent the refreshing of page.
+- proud into looking into APIs process and researching the code to fetch data using api url. and working with queries to get specific data
+-i'm proud of myself for persisting when i kept facing errors of the art not showing or the page not rendering correctly.
 
 ## Learning:
 - async functions are special functions that run in the background -- it returns a promise (of completion or failure) of a task
