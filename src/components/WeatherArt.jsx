@@ -4,8 +4,8 @@ import "./WeatherArt.css";
 
 export default function WeatherArt({ place, weather, category }) {
   return (
-    <div>
-      <p>
+    <div className="weather-card">
+      <p className="weather-place">
         {place.name}
         <span>{place.region}</span>
       </p>
