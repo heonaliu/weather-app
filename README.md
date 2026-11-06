@@ -2,9 +2,11 @@
 
 ![preview](src/assets/preview.png)
 
+## Link: 
+- https://weatherport-app.vercel.app/
 
 ## Description
-- See the weather in your area with adorable personalized hand-drawn graphics
+- See the weather in any area with personalized hand-drawn graphics
 
 ## Purpose of Building
 - I need to work more with APIs in general - I never usually do and I wanted to make something fun and simple to practice my skills of linking API with front end and fetching data
