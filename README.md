@@ -1,7 +1,10 @@
 # Weather App
 
+![preview](src/assets/preview.png)
+
+
 ## Description
-- See the weather in your area with adorable personalized graphics
+- See the weather in your area with adorable personalized hand-drawn graphics
 
 ## Purpose of Building
 - I need to work more with APIs in general - I never usually do and I wanted to make something fun and simple to practice my skills of linking API with front end and fetching data
@@ -26,3 +29,5 @@
 - after fetching data, when formatting it if it has curly braces, that means we're extrating a specific property named "whatever is inside the curly bracket"
 - I knew that there was always try and catch however I didn't realize that you could also use finally in there too.
 - Object.keys(obj) is a method that returns an array of given objects. Obj is the array you want to extract the "keys" from.
+
+- Made by Heona Liu
