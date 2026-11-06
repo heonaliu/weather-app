@@ -38,7 +38,7 @@ function App() {
       className={`app ${isDark ? "dark" : ""}`}
       style={{ background: BACKGROUNDS[preview] || "#c8f6fbca" }}
     >
-      <img src={sun} alt="Title Image"/>
+      {!weather && <img src={sun} alt="Title Image"/>}
       <SearchBar onSelect={handleSelect} />
       {loading && <p className="status">Checking....</p>}
       {error && <p className="status error">{error}</p>}
