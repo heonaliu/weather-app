@@ -4,6 +4,7 @@ import SearchBar from "./components/SearchBar";
 import WeatherArt from "./components/WeatherArt";
 import { fetchWeather } from "./utils/api";
 import { ART, BACKGROUNDS } from "./utils/weatherCodes";
+import sun  from "./assets/art/sunny.png"
 
 function App() {
   const [place, setPlace] = useState(null);
@@ -35,8 +36,9 @@ function App() {
   return (
     <main
       className={`app ${isDark ? "dark" : ""}`}
-      style={{ background: BACKGROUNDS[preview] || "#ffffff" }}
+      style={{ background: BACKGROUNDS[preview] || "#c8f6fbca" }}
     >
+      <img src={sun} alt="Title Image"/>
       <SearchBar onSelect={handleSelect} />
       {loading && <p className="status">Checking....</p>}
       {error && <p className="status error">{error}</p>}

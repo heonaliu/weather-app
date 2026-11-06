@@ -41,3 +41,8 @@
 .app.dark .weather-card {
   background: rgba(255, 255, 255, 0.12);
 }
+
+main img {
+    max-width: 420px;
+    
+}
