@@ -57,6 +57,7 @@ function App() {
           ))}
         </select>
       </label>
+      <footer>Made by Heona Liu - 18</footer>
     </main>
   );
 }
