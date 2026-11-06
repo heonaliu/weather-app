@@ -44,5 +44,9 @@
 
 main img {
     max-width: 420px;
-    
+    transition: transform 0.3s ease;
+}
+
+main img:hover{
+    transform: scale(1.05) rotate(-1deg)
 }
